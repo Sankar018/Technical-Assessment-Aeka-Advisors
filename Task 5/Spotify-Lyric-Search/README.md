@@ -75,16 +75,16 @@ Task-5/Spotify-Lyric-Search/
 
 ### 1️⃣ Clone the Repository
 
-git clone <your-github-repo-link>
+git clone https://github.com/Sankar018/Technical-Assessment-Aeka-Advisors
 
 ### 2️⃣ Navigate to the Project Directory
-cd Task-5-Spotify-Lyric-Search
+cd "Task-5/Spotify-Lyric-Search"
 
 ### 3️⃣ Install Required Dependencies
 pip install -r requirements.txt
 
 ### 4️⃣ Open the Jupyter Notebook
-jupyter notebook notebooks/spotify_lyric_search.ipynb
+jupyter notebook notebooks/main.ipynb
 
 
 Run all cells and test the model using:
