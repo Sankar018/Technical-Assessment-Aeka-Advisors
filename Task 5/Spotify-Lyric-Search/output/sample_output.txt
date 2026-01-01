@@ -1,0 +1,60 @@
+SPOTIFY LYRIC SEARCH – SAMPLE OUTPUT
+===================================
+
+Input Lyric Snippet:
+--------------------
+"I'll never know why I had to go"
+
+Top Prediction:
+---------------
+Song   : Take A Load Off
+Artist : Stone Temple Pilots
+Score  : 0.412
+
+
+--------------------------------------------------
+
+Input Lyric Snippet:
+--------------------
+"guns children records lots zeros born"
+
+Top Prediction:
+---------------
+Song   : 21 Guns
+Artist : Green Day
+Score  : 0.367
+
+
+--------------------------------------------------
+
+Input Lyric Snippet:
+--------------------
+"streets lights shadows city night police"
+
+Top Prediction:
+---------------
+Song   : The Guns Of Brixton
+Artist : Clash
+Score  : 0.351
+
+
+--------------------------------------------------
+
+MODEL EVALUATION
+================
+Accuracy Test:
+--------------
+
+Accuracy: 78.0 %
+
+--------------------------------------------------
+
+Notes:
+------
+- The model uses TF-IDF vectorization with n-grams (1–4).
+- Predictions are based on cosine similarity between lyric snippets
+  and available text in the dataset.
+- Accuracy may vary depending on snippet length and lyric coverage.
+
+==================================================
+END OF OUTPUT

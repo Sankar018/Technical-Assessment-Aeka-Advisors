@@ -1,0 +1,75 @@
+.dashboard-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-btn {
+  background: #1e1e1e;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #000;
+}
+
+.upload-box {
+  margin: 30px 0;
+  padding: 20px;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.upload-box button {
+  margin-left: 10px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  background: #1e1e1e;
+  color: white;
+  cursor: pointer;
+}
+
+.image-list {
+  margin-top: 20px;
+}
+
+.image-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.image-row img {
+  width: 130px;
+  border-radius: 6px;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  opacity: 0.85;
+}

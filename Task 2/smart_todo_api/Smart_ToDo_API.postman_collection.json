@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "9318ccbf-044a-4981-8a0a-471d21a13647",
+		"name": "Smart ToDo API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "51124582",
+		"_collection_link": "https://sankar-bhunia022-7839093.postman.co/workspace/SANKAR-BHUNIA's-Workspace~7730f6cb-e2ac-4fe4-8862-891c76ec92a2/collection/51124582-9318ccbf-044a-4981-8a0a-471d21a13647?action=share&source=collection_link&creator=51124582"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Sankar\",\r\n  \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/signup",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Sankar\",\r\n  \"password\": \"1234\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2NzAyODEwMywianRpIjoiY2E1ZGIyMDMtMGFmMi00YmIxLTllMGYtMDYxYzlmMjg5ZDYxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5NTJiMGE0N2FjMzM2MmQ0ZjU4N2M1ZSIsIm5iZiI6MTc2NzAyODEwMywiY3NyZiI6IjRlMmRmMWYxLWJmYWItNGQxOC1hZWJlLTVmMmJhMTA4YmMxMiIsImV4cCI6MTc2NzAyOTAwM30.pBrUup-CLooHjlmHZ9ikpBOXGIXkPcKjAGqJfvP1meU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"XYZ\",\r\n  \"description\": \"bc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/tasks",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2NzAyODEwMywianRpIjoiY2E1ZGIyMDMtMGFmMi00YmIxLTllMGYtMDYxYzlmMjg5ZDYxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5NTJiMGE0N2FjMzM2MmQ0ZjU4N2M1ZSIsIm5iZiI6MTc2NzAyODEwMywiY3NyZiI6IjRlMmRmMWYxLWJmYWItNGQxOC1hZWJlLTVmMmJhMTA4YmMxMiIsImV4cCI6MTc2NzAyOTAwM30.pBrUup-CLooHjlmHZ9ikpBOXGIXkPcKjAGqJfvP1meU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/tasks",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2NzAyODEwMywianRpIjoiY2E1ZGIyMDMtMGFmMi00YmIxLTllMGYtMDYxYzlmMjg5ZDYxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5NTJiMGE0N2FjMzM2MmQ0ZjU4N2M1ZSIsIm5iZiI6MTc2NzAyODEwMywiY3NyZiI6IjRlMmRmMWYxLWJmYWItNGQxOC1hZWJlLTVmMmJhMTA4YmMxMiIsImV4cCI6MTc2NzAyOTAwM30.pBrUup-CLooHjlmHZ9ikpBOXGIXkPcKjAGqJfvP1meU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"completed\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/tasks/6952b59a7ac3362d4f587c60",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"tasks",
+						"6952b59a7ac3362d4f587c60"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2NzAyODEwMywianRpIjoiY2E1ZGIyMDMtMGFmMi00YmIxLTllMGYtMDYxYzlmMjg5ZDYxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5NTJiMGE0N2FjMzM2MmQ0ZjU4N2M1ZSIsIm5iZiI6MTc2NzAyODEwMywiY3NyZiI6IjRlMmRmMWYxLWJmYWItNGQxOC1hZWJlLTVmMmJhMTA4YmMxMiIsImV4cCI6MTc2NzAyOTAwM30.pBrUup-CLooHjlmHZ9ikpBOXGIXkPcKjAGqJfvP1meU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/tasks/6952b59a7ac3362d4f587c60",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"tasks",
+						"6952b59a7ac3362d4f587c60"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
