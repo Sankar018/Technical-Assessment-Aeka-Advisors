@@ -75,7 +75,7 @@ Task-5/Spotify-Lyric-Search/
 
 ### 1️⃣ Clone the Repository
 
-git clone https://github.com/Sankar018/Technical-Assessment-Aeka-Advisors
+git clone https://github.com/Sankar018/Technical-Assessment-Aeka-Advisors.git
 
 ### 2️⃣ Navigate to the Project Directory
 cd "Task-5/Spotify-Lyric-Search"
