@@ -78,7 +78,7 @@ src/
 
 ### 1️⃣ Clone the repository
 
-git clone https://github.com/Sankar018/Technical-Assessment-Aeka-Advisors
+git clone https://github.com/Sankar018/Technical-Assessment-Aeka-Advisors.git
 
 ### 2️⃣ Navigate to the project directory
 cd creative-showcase
